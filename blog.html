@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/blog.png" type="image/x-icon">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#111111B3',
+                    },
+                    fontFamily: {
+                        lexend: "Lexend",
+                        Inter: 'Inter',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class=" font-lexend pt-52">
+    <header class="top-0 fixed w-full py-12 bg-[#f3ece0c0] backdrop-blur-md">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <button onclick="myFunction()" class="btn btn-primary text-black bg-primary border-none text-lg">Blog</button>
+                </div>
+            </div>
+            <div class="navbar-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <p class="text-lg font-bold">Donate Bangladesh</p>
+            </div>
+            <div class="navbar-end gap-3">
+                <img src="assets/coin.png" alt="">
+                <p class="text-lg text-secondary font-semibold">10000 BDT</p>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto mt-10 flex flex-col justify-center items-center rounded-2xl p-12">
+        <div class="bg-gray-200 px-5 py-1 text-xl rounded-xl font-semibold">
+            <p>FAQS</p>
+        </div>
+        <div class="flex gap-2 justify-center md:justify-start">
+            <h3 class="font-bold text-4xl text-black">Important FAQ</h3>
+            <i class="fa-solid fa-clipboard-question text-black text-3xl"></i>
+        </div>
+
+        <div class="mt-5">
+            <div class="join join-vertical w-full">
+                <!-- 1 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for the web documents.In an HTML document,DOM     allows JavaScript to access and modify the contents of the page.This is how interactive features on websites     are implemented.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+              
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-content">
+                    <p>Event delegation is a technique in JS that set event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.Instead of adding individual event listeners to multiple child elements,one can add a single event listener to a parent element.This parent element can then manage all events that bubble up from its child elements.</p>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
+                    <div class="collapse-content">
+                
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </main>
+</body>
+</html>
