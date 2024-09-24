@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Donation</title>
 
+    <!-- daisy ui -->
+     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+
+    <!-- google font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
+
+    <!-- png logo -->
+
     <link rel="shortcut icon" href="assets/blog.png" type="image/x-icon">
+
+
+    <!-- awesome font  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <script>
@@ -42,7 +54,7 @@
             <section class="gap-5 navbar container mx-auto flex-col justify-center items-center md:flex-row md:justify-around xl:justify-between">
                 <div class="navbar-center">
                     <div class="dropdown">
-                        <a href="index.html"><button class="btn btn-primary text-black bg-primary px-8 border-none text-lg hover:bg-[#9ed654]">Home</button></a>
+                        <a href="index.html"><button id="home-btn" class="btn btn-primary text-black bg-primary px-8 border-none text-lg hover:bg-[#9ed654]">Home</button></a>
                     </div>
                 </div>
                 
@@ -52,7 +64,7 @@
                 </div>
                 <div class="navbar-end flex-row  w-[10em]">
                     <img src="assets/coin.png" alt="">
-                    <p id="my-balance" class="px-2 text-xl text-secondary font-semibold">40000</p>
+                    <p id="blog-amount" class="px-2 text-xl text-secondary font-semibold">40000</p>
                     <p class="text-xl text-secondary font-semibold">BDT</p>
                 </div>
             </section>
@@ -122,5 +134,12 @@
               </div>
         </div>
     </main>
+    <!-- <script>
+        const aa = document.getElementById('blog-value').innerText;
+        console.log(aa)
+    </script> -->
+
+    <script src="js/blog.js"></script>
+
 </body>
 </html>

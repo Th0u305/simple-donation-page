@@ -17,7 +17,7 @@ function processDonation(location, inputAmountId, balanceId) {
     const inputAmount = getInputFieldValueById(inputAmountId);
     const myBalance = getInnerTextValue('my-balance');
     const locationBalance = getInnerTextValue(balanceId);
-  
+
     if (validateDonation(inputAmount, myBalance)) {
       setElementValue(balanceId, locationBalance + inputAmount);
       setElementValue('my-balance', myBalance - inputAmount);
@@ -25,9 +25,20 @@ function processDonation(location, inputAmountId, balanceId) {
       my_modal.showModal(); 
     }
 }
+
+
+// sending the my balance after donation to blog.html
+
+blogBtn.addEventListener('click', function(){
+  const blogBalance = getInnerTextValue('my-balance');
   
+  localStorage.setItem('my-balance', blogBalance)
   
-// history
+  window.location.href = "blog.html"
+
+})
+
+
 function addToHistory(amount, location) {
     const div = document.createElement('div');
     const dateTime = new Date().toString();
@@ -37,7 +48,8 @@ function addToHistory(amount, location) {
         <h3 class="md:text-xl font-extrabold text-black">${amount} Taka donated to: ${donationDescriptions[location]}</h3>
         <p class="text-[#111111B3] bg-[#f9f7f3] rounded-lg px-4 py-2">Date: ${dateTime}</p>`;
 
-    document.getElementById('history-container').appendChild(div);
+    const historyContainer = document.getElementById('history-container');
+    historyContainer.insertBefore(div, historyContainer.firstChild);
 }
   
   

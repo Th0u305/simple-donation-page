@@ -11,6 +11,7 @@ const donationDescriptions = {
 // buttons
 const historyBtn = document.getElementById('history-btn')
 const donationBtn = document.getElementById('donation-btn')
+const blogBtn = document.getElementById('blog-btn')
 
 
 // container
