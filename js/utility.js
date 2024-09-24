@@ -63,5 +63,3 @@ donationBtn.addEventListener('click',function(){
     
     historyBtn.classList.add('bg-white')
 })
-  
-  

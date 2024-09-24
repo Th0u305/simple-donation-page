@@ -53,6 +53,3 @@ document.getElementById('tree-btn').addEventListener('click', function() {
     processDonation('tree', 'tree-Input-Amount', 'tree-balance');
     document.getElementById('tree-Input-Amount').value = ""
 });
-
-
-
