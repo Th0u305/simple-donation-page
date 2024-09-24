@@ -33,25 +33,36 @@
         }
     </script>
 </head>
-<body class=" font-lexend pt-52">
-    <header class="top-0 fixed w-full py-12 bg-[#f3ece0c0] backdrop-blur-md">
-        <div class="navbar container mx-auto">
-            <div class="navbar-start">
-                <div class="dropdown">
-                <button onclick="myFunction()" class="btn btn-primary text-black bg-primary border-none text-lg">Blog</button>
+<body class=" font-lexend pt-44">
+
+    <!-- header -->
+
+    <header class="top-0 fixed w-full z-50">
+        <div class="bg-[#f3ece0dc] backdrop-blur-lg py-12 border-b-2 border-gray-300">
+            <section class="gap-5 navbar container mx-auto flex-col justify-center items-center md:flex-row md:justify-around xl:justify-between">
+                <div class="navbar-center">
+                    <div class="dropdown">
+                        <a href="index.html"><button class="btn btn-primary text-black bg-primary px-8 border-none text-lg hover:bg-[#9ed654]">Home</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="navbar-center gap-3">
-                <img src="assets/logo.png" alt="">
-                <p class="text-lg font-bold">Donate Bangladesh</p>
-            </div>
-            <div class="navbar-end gap-3">
-                <img src="assets/coin.png" alt="">
-                <p class="text-lg text-secondary font-semibold">10000 BDT</p>
-            </div>
+                
+                <div class="navbar-center gap-3 flex-row lg:flex-row">
+                    <img src="assets/logo.png" alt="">
+                    <p class="text-xl md:text-2xl font-bold">Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end flex-row  w-[10em]">
+                    <img src="assets/coin.png" alt="">
+                    <p id="my-balance" class="px-2 text-xl text-secondary font-semibold">40000</p>
+                    <p class="text-xl text-secondary font-semibold">BDT</p>
+                </div>
+            </section>
         </div>
     </header>
+
+    <!-- main -->
+
     <main class="container mx-auto mt-10 flex flex-col justify-center items-center rounded-2xl p-12">
+
         <div class="bg-gray-200 px-5 py-1 text-xl rounded-xl font-semibold">
             <p>FAQS</p>
         </div>
@@ -62,36 +73,50 @@
 
         <div class="mt-5">
             <div class="join join-vertical w-full">
+
                 <!-- 1 -->
+
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" checked="checked" />
                     <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-                    <div class="collapse-content">
-                        <p>The Document Object Model (DOM) is a programming interface for the web documents.In an HTML document,DOM     allows JavaScript to access and modify the contents of the page.This is how interactive features on websites     are implemented.</p>
+                    <div class="collapse-content  pl-8">
+                        <p>The Document Object Model (DOM) is like a blueprint that represents the structure of a web page. It helps developers access and change different parts of the page, such as headings, paragraphs, images, and forms. Think of the DOM as a way to organize and control all the elements that make up a web page.</p>
                     </div>
                 </div>
+
                 <!-- 2 -->
+
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
                     <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                    <div class="collapse-content">
-              
+                    <div class="collapse-content pl-12">
+                        <ul class="list-disc">
+                            <li>getElementById()</li>
+                            <li>getElementsByClassName()</li>
+                            <li>getElementsByTagName()</li>
+                            <li>querySelector()</li>
+                            <li>querySelectorAll()</li>
+                        </ul>
                     </div>
                 </div>
+
                 <!-- 3 -->
+
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-                  <div class="collapse-content">
+                  <div class="collapse-content  pl-8">
                     <p>Event delegation is a technique in JS that set event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.Instead of adding individual event listeners to multiple child elements,one can add a single event listener to a parent element.This parent element can then manage all events that bubble up from its child elements.</p>
                   </div>
                 </div>
+
                 <!-- 4 -->
+
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
                     <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
-                    <div class="collapse-content">
-                
+                    <div class="collapse-content pl-8">
+                        <p>To manipulate HTML elements and their attributes using JavaScript we use the DOM (Document Object Model) function of JavaScript. The DOM represents the structure of your HTML document as a tree of objects, and you can use JavaScript to interact with these objects to change their properties, attributes, content, and more.</p>
                     </div>
                   </div>
               </div>
